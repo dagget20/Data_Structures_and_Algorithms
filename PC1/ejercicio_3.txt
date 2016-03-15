@@ -1,0 +1,17 @@
+modulo ingresar_por_final(valor)
+	crear(nuevo)
+	nuevo.dato = valor
+	si inicio == NULL
+		inicio = nuevo
+	si no
+		p = inicio
+		mientras (p.siguiente <> NULL)
+			p = p.siguiente
+		fin_mientras
+		si nuevo.dato > inicio.dato
+			p.siguiente = nuevo
+		fin_si
+	fin_si
+fin_modulo
+
+
